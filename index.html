@@ -19,27 +19,32 @@
     <section class="centre" id="input">
       <div>
         <form id="form">
-          <input type="text" id="text" placeholder="Enter text to translate" />
+          <textarea
+            id="text"
+            cols="40"
+            rows="5"
+            placeholder="Enter your text here"
+          ></textarea>
+          <br />
+          <label for="language-select">Choose a language:</label>
+          <br />
+          <select id="language-select">
+            <option value="">--Please choose a language</option>
+            <option value="pirate">Pirate</option>
+            <option value="yoda">Yoda</option>
+            <option value="pig-latin">Pig Latin</option>
+            <option value="oldenglish">Old English</option>
+            <option value="groot">Groot</option>
+          </select>
           <br />
           <button>Get translation</button>
         </form>
       </div>
-      <div>
-        <label for="language-select">Choose a language:</label>
-        <br>
-        <select id="language-select">
-          <option value="">--Please choose a language</option>
-          <option value="Pirate">Pirate</option>
-          <option value="Yoda">Yoda</option>
-          <option value="pig-latin">Pig Latin</option>
-          <option value="oldenglish">Old English</option>
-          <option value="groot">Groot</option>
-        </select>
-      </div>
+      <div></div>
     </section>
     <section class="centre" id="output">
       <div>
-        <textarea id="translation" cols="30" rows="10"></textarea>
+        <textarea id="translation" cols="40" rows="5"></textarea>
       </div>
     </section>
   </body>
