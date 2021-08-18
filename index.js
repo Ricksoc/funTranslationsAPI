@@ -19,7 +19,6 @@ async function onSubmit(e) {
     let response = await fetch(url + language + urlJoin + toTranslate);
     let results = await response.json();
     outputText.value = results.contents.translated;
-    console.log(results.contents.translated);
   } catch (err) {
     if (language === "") {
       outputText.value = "You did not select a language";
